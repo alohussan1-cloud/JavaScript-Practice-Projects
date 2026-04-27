@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Search Input Section */
+input[type="number"] {
+    width: 100%;
+    max-width: 350px;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+input[type="number"]:focus {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+input[type="number"]::placeholder {
+    color: #999;
+}
+
+/* Search Button */
+ button {
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(245, 87, 108, 0.4);
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(245, 87, 108, 0.5);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+.main{
+    width: 50%;
+    height: auto;
+}
+
+/* Student Data Container */
+.StudentData {
+    background: white;
+    padding: 7%;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: auto;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Marks Display Paragraphs */
+.StudentData p {
+    font-size: 18px;
+    padding: 12px 20px;
+    margin: 10px 0;
+    background: linear-gradient(135deg, #e0e7ff 0%, #f3e7ff 100%);
+    border-radius: 12px;
+    border-left: 4px solid #667eea;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.StudentData p:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+}
+
+/* Action Buttons inside StudentData */
+.StudentData button {
+    padding: 12px 25px;
+    margin: 10px 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.reset{
+     padding: 12px 25px;
+    margin-left: 40%;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.StudentData button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.StudentData button:active {
+    transform: translateY(0);
+}
+
