@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <link rel="stylesheet" href="bank.css">
+</head>
+<body>
+    
+  <input type="text" name="" id="inputName">
+  <button onclick="enterName()" class="btn">Enter Account Name</button>
+
+    <input type="number" id="inputDeposit"> 
+    <button onclick="Deposit()" >Deposit</button>
+
+    <input type="number" name="" id="inputWithdraw"> 
+    <button onclick="withdraw()">Withdraw</button>
+    
+    <button onclick="checkBalance()" >Check Balance</button>
+
+    <div class="box">
+      <p id="error"></p>
+      <h1></h1>
+    </div>
+    
+    <p id="statement"></p>
+
+    <script src="bank.js"></script>
+</body>
+</html>
