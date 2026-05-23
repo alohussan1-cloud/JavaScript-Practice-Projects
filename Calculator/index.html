@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .calculator {
+            background-color: #000000;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+
+        input {
+            width: 100%;
+            padding: 20px;
+            font-size: 24px;
+            text-align: right;
+            border: none;
+            background-color: #2a2a2a;
+            color: #ffffff;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .button-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            flex: 1;
+            padding: 20px;
+            font-size: 20px;
+            border: none;
+            background-color: #333333;
+            color: #ffffff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        button:active {
+            background-color: #1a1a1a;
+        }
+
+        .operator {
+            background-color: #ff9500;
+        }
+
+        .operator:active {
+            background-color: #cc7700;
+        }
+
+        .equal {
+            background-color: #ff9500;
+        }
+
+        .equal:active {
+            background-color: #cc7700;
+        }
+
+        .clear {
+            background-color: #d4d4d2;
+            color: #000000;
+        }
+
+        .clear:active {
+            background-color: #a6a6a6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="calculator">
+        <div>
+            <input type="text" size="30">
+        </div>
+        <div class="button-row">
+            <button onclick="document.querySelector('input').value+='7'">7</button>
+            <button onclick="document.querySelector('input').value+='8'">8</button>
+            <button onclick="document.querySelector('input').value+='9'">9</button>
+            <button class="operator" onclick="document.querySelector('input').value+='/'">/</button>
+        </div>
+        <div class="button-row">
+            <button onclick="document.querySelector('input').value+='4'">4</button>
+            <button onclick="document.querySelector('input').value+='5'">5</button>
+            <button onclick="document.querySelector('input').value+='6'">6</button>
+            <button class="operator" onclick="document.querySelector('input').value+='*'">*</button>
+        </div>
+        <div class="button-row">
+            <button onclick="document.querySelector('input').value+='1'">1</button>
+            <button onclick="document.querySelector('input').value+='2'">2</button>
+            <button onclick="document.querySelector('input').value+='3'">3</button>
+            <button class="operator" onclick="document.querySelector('input').value+='-'">-</button>
+        </div>
+        <div class="button-row">
+            <button onclick="document.querySelector('input').value+='0'">0</button>
+            <button onclick="document.querySelector('input').value+='.'">.</button>
+            <button class="equal" onclick="document.querySelector('input').value = eval(document.querySelector('input').value)">=</button>
+            <button class="operator" onclick="document.querySelector('input').value+='+'">+</button>
+        </div>
+        <div class="button-row">
+            <button class="clear" onclick="document.querySelector('input').value=''">Clear</button>
+        </div>
+    </div>
+</body>
+</html>
